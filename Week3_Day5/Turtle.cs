@@ -8,6 +8,10 @@ namespace Week3_Day5
 {
     class Turtle
     {
+        //this static variable belongs to the CLASS
+        //It is shared among all instances.
+        //This also means you can use the variable without creating instances first.
+
         static int turtleCount;
 
         public Turtle()
@@ -15,7 +19,14 @@ namespace Week3_Day5
             turtleCount++;
         }
 
-
+        //This static method belongs to the class.
+        //It's shared among all instances.
+        //It means we can use the method without creating
+        //any instances first.
+        public static void WarCry()
+        {
+            Console.WriteLine("We are an army of " + turtleCount + " turtles!");
+        }
 
 
 
